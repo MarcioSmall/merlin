@@ -1,0 +1,21 @@
+{% include 'head.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+<body>
+    <header class="main-header-container">
+        <div class="main-header container">
+            <h1>
+                <a class="main-logo" href="/">
+                    <i class="fa fa-calculator main-logo-icon"></i>
+                    <span class="main-logo-text">Merlin - RPN Calculator</span>
+                </a>
+            </h1>
+        </div>
+    </header>
+    <div class="container">
+        {% crispy form %}
+    </div>
+</body>
+
+</html>

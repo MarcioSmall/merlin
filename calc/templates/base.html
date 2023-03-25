@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    {% include 'head.html' %}
+    <title>{% block title %}{% endblock title %} Merlin</title>
+</head>
+
+<body>
+    {% include 'header.html' %}
+    {% include 'search.html' %}
+
+    <main class="main-content-container">
+        {% block content %}{% endblock content %}
+        {% include 'pagination.html' %}
+    </main>
+
+    {% include 'footer.html' %}
+</body>
+
+</html>
